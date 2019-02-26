@@ -40,7 +40,7 @@ var time = {
 };
 
 // writes to clock according to clockSetting
-function writetoClock() {
+function writeToClock() {
 
     clockSetting == '24h' ? document.getElementById('clock').innerHTML = time.getTimeString() : document.getElementById('clock').innerHTML = time.getSmallTimeString();
 
@@ -59,7 +59,7 @@ function changeClockSetting() {
 writeToClock();
 
 // update every 1 second
-setInterval(writetoClock, 1000);
+setInterval(writeToClock, 1000);
 
 // event listener for clock
 document.getElementById('clock').addEventListener('click', changeClockSetting);
