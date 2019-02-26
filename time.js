@@ -35,7 +35,7 @@ var time = {
 
         return smallTime;
         
-    },
+    }
 
 };
 
